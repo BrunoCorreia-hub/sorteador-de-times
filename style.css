@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #0a0a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: 10px 25px;
+    box-shadow: 0 0 0 15px #6B09AD;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 45px;
+    font-family: "Bungee Spice", sans-serif;
+    margin-top: 30px;
+}
+
+.texto{
+    width: 100%;
+    min-height: 250px;
+    background: linear-gradient(0deg,rgba(92, 92, 92, 0.61) 0%, rgba(23, 23, 23, 0.52) 100%);
+    padding: 12px;
+    font-size: 30px;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.label{
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#quantidade{
+    padding: 8px 0;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    background: linear-gradient(0deg,rgba(92, 92, 92, 0.61) 0%, rgba(23, 23, 23, 0.52) 100%);
+    box-shadow: 0 0 5px 1px gray;
+}
+
+.botao{
+    width: 230px;
+    padding: 10px 5px;
+    background-color: #6B09AD;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover{
+    transform: scale(1.02);
+    background-color: transparent;
+    box-shadow: 5px 7px 3px #6B09AD;
+    color: #6B09AD;
+}
+
+.botao:active{
+    opacity: 0.7;
+}
+
+.subtitulo{
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 27px;
+    color: #fff;
+}
+
+.times-sorteados{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    border: 1px solid #6B09AD;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+strong{
+    color: #6B09AD;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+    color: #fff;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.erro{
+    display: none;
+    color: red;
+    font-size: 18px;
+}
+
+@media (max-width: 750px){
+    .titulo{
+        font-size: 27px;
+        font-family: "Bungee Spice", sans-serif;
+    }
+
+    .label{
+        font-size: 18px;
+        flex-direction: column;
+    }
+
+    .times-sorteados{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    .label{
+        font-size: 15px;
+    }
+
+    .subtitulo{
+        font-size: 23px;
+    }
+}
